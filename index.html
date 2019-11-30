@@ -1,209 +1,329 @@
-﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
-<html xml:lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
 <head>
-<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-<title>html5</title>
-<link type="text/css" rel="stylesheet" href="renxi/default.css">
-<script type="text/javascript" src="renxi/jquery.min.js"></script>
-<script type="text/javascript" src="renxi/jscex.min.js"></script>
-<script type="text/javascript" src="renxi/jscex-parser.js"></script>
-<script type="text/javascript" src="renxi/jscex-jit.js"></script>
-<script type="text/javascript" src="renxi/jscex-builderbase.min.js"></script>
-<script type="text/javascript" src="renxi/jscex-async.min.js"></script>
-<script type="text/javascript" src="renxi/jscex-async-powerpack.min.js"></script>
-<script type="text/javascript" src="renxi/functions.js" charset="utf-8"></script>
-<script type="text/javascript" src="renxi/love.js" charset="utf-8"></script>
-<style type="text/css">
-<!--
-.STYLE1 {
-	color: #666666
-}
--->
-</style>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<title>Rectangle Mobile Template</title>
+<meta name="description" content="">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="css/normalize.css">
+<link rel="stylesheet" href="css/font-awesome.css">
+<link rel="stylesheet" href="css/bootstrap.min.css">
+<link rel="stylesheet" href="css/templatemo-style.css">
+<script src="js/vendor/modernizr-2.6.2.min.js"></script>
 </head>
 <body>
-<audio autoplay="autopaly">
-  <source src="renxi.mp3" type="audio/mp3" />
-</audio>
-<div id="main">
-  <div id="error">本页面采用HTML5编辑，目前您的浏览器无法显示，请换成谷歌(Chrome)或者火狐(Firefox)浏览器，或者其他游览器的最新版本。</div>
-  <div id="wrap">
-    <div id="text">
-      <div id="code"> <font color="#FF0000"> <span class="say">亲爱的小宝宝，我爱你</span><br>
-        <span class="say"> </span><br>
-        <span class="say"> 我知道我不会甜言蜜语，但是我会用行动证明一切</span><br>
-        <span class="say"> </span><br>
-        
-        <span class="say"> </span><br>
-        <span class="say"><span class="space"></span> -- 爱你--</span> </font>
-        </p>
-      </div>
-    </div>
-    <div id="clock-box"> <span class="STYLE1"></span><font color="#33CC00">亲爱的，我喜欢你</font> <span class="STYLE1">已经是……</span>
-      <div id="clock"></div>
-    </div>
-    <canvas id="canvas" width="1100" height="680"></canvas>
-  </div>
+<!--[if lt IE 7]>
+	<p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+<![endif]-->
+
+<div class="site-bg"></div>
+<div class="site-bg-overlay"></div>
+
+<!-- TOP HEADER -->
+<div class="top-header">
+	<div class="container">
+		<div class="row">
+			<div class="col-md-6 col-sm-6 col-xs-12">
+				<p class="phone-info">Call us: <a href="#">010 020 0340</a></p>
+			</div>
+			<div class="col-md-6 col-sm-6 col-xs-12">
+				<div class="social-icons">
+					<ul>
+						<li><a href="#" class="fa fa-facebook"></a></li>
+						<li><a href="#" class="fa fa-twitter"></a></li>
+						<li><a href="#" class="fa fa-linkedin"></a></li>
+						<li><a href="#" class="fa fa-dribbble"></a></li>
+						<li><a href="#" class="fa fa-rss"></a></li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</div>
+</div> <!-- .top-header -->
+
+
+<div class="visible-xs visible-sm responsive-menu">
+	<a href="#" class="toggle-menu">
+		<i class="fa fa-bars"></i> Show Menu
+	</a>
+	<div class="show-menu">
+		<ul class="main-menu">
+			<li>
+				<a class="show-1 active homebutton" href="#"><i class="fa fa-home"></i>Home</a>
+			</li>
+			<li>
+				<a class="show-2 aboutbutton" href="#"><i class="fa fa-user"></i>About Us</a>
+			</li>
+			<li>
+				<a class="show-3 projectbutton" href="#"><i class="fa fa-camera"></i>Gallery</a>
+			</li>
+			<li>
+				<a class="show-5 contactbutton" href="#"><i class="fa fa-envelope"></i>Contact</a>
+			</li>
+		</ul>
+	</div>
 </div>
-<script>
-    </script>
-<script>
-    (function(){
-        var canvas = $('#canvas');
+<div class="copyrights">Collect from <a href="http://www.mycodes.net" >免费模板</a></div>
+<div class="container" id="page-content">
+	<div class="row">
+
+
 		
-        if (!canvas[0].getContext) {
-            $("#error").show();
-            return false;        }
+		<div class="col-md-9 col-sm-12 content-holder">
+			<!-- CONTENT -->
+			<div id="menu-container">
+				
+				<div class="logo-holder logo-top-margin">
+					<a href="#" class="site-brand"><img src="images/logo.png" alt=""></a>
+				</div>
+				
+				
+				<div id="menu-1" class="homepage home-section text-center">
+					<div class="welcome-text">
+						<h2>Hello, Welcome to <strong>RECTANGLE</strong></h2>
+						<p>Rectangle is free mobile template brought to you by <span class="orange">template</span><span class="green">mo</span>.com website. You can download, edit and use this layout for any purpose. Please tell your friends about our website. Thank you.</p>
+						<form action="#" method="get" class="subscribe-form">
+							<div class="row">
+								<fieldset class="col-md-offset-2 col-md-6">
+									<input name="subscribe-email" type="email" class="email" id="subscribe-email" placeholder="Write your email here..">
+								</fieldset>
+								<fieldset class="col-md-4 button-holder">
+									<input name="submit" type="submit" class="button default" id="submit" value="Submit">
+								</fieldset>
+							</div>
+							<p class="subscribe-text">Please subscribe your email for latest updates!</p>
+						</form>
+					</div>
+				</div>
 
-        var width = canvas.width();
-        var height = canvas.height();        
-        canvas.attr("width", width);
-        canvas.attr("height", height);
-        var opts = {
-            seed: {
-                x: width / 2 - 20,
-                color: "rgb(190, 26, 37)",
-                scale: 2
-            },
-            branch: [
-                [535, 680, 570, 250, 500, 200, 30, 100, [
-                    [540, 500, 455, 417, 340, 400, 13, 100, [
-                        [450, 435, 434, 430, 394, 395, 2, 40]
-                    ]],
-                    [550, 445, 600, 356, 680, 345, 12, 100, [
-                        [578, 400, 648, 409, 661, 426, 3, 80]
-                    ]],
-                    [539, 281, 537, 248, 534, 217, 3, 40],
-                    [546, 397, 413, 247, 328, 244, 9, 80, [
-                        [427, 286, 383, 253, 371, 205, 2, 40],
-                        [498, 345, 435, 315, 395, 330, 4, 60]
-                    ]],
-                    [546, 357, 608, 252, 678, 221, 6, 100, [
-                        [590, 293, 646, 277, 648, 271, 2, 80]
-                    ]]
-                ]] 
-            ],
-            bloom: {
-                num: 700,
-                width: 1080,
-                height: 650,
-            },
-            footer: {
-                width: 1200,
-                height: 5,
-                speed: 10,
-            }
-        }
+				<div id="menu-2" class="content about-section">
+					<div class="row">
+						<div class="col-md-8 col-sm-8">
+							<div class="box-content profile">
+								<h3 class="widget-title">Learn about us</h3>
+								<div class="profile-thumb">
+									<img src="images/8.jpg" alt="">
+								</div>
+								<div class="profile-content">
+									<h5 class="profile-name">Linda Beauty</h5>
+									<span class="profile-role">Creative Director</span>
+									<p>Most of the images are from <a rel="nofollow" href="#">Unsplash.com</a> website. Curabitur auctor justo pretium purus varius sagittis. Aliquam porttitor leo sapien, hendrerit dapibus lorem.<br><br>
+									Change icons by <a rel="nofollow" href="#/font-awesome-icon-world-map/">Font Awesome</a> (version 4). Example: <span class="blue">&lt;i class=&quot;fa fa-refresh&quot;&gt;&lt;/i&gt;</span></p>
+								</div>
+							</div>
+						</div>
+						<div class="col-md-4 col-sm-4">
+							<div class="box-content">
+								<h3 class="widget-title">Background</h3>
+								<p>Vestibulum pellentesque ante sit amet tristique hendrerit. Sed consequat, nunc lobortis faucibus pretium, enim nibh blandit est, nec sollicitudin est quam a neque. Aenean eget malesuada justo.</p>
+								<div class="about-social">
+									<ul>
+										<li><a href="#" class="fa fa-facebook"></a></li>
+										<li><a href="#" class="fa fa-twitter"></a></li>
+										<li><a href="#" class="fa fa-linkedin"></a></li>
+										<li><a href="#" class="fa fa-dribbble"></a></li>
+									</ul>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-md-5 col-sm-5">
+							<div class="box-content">
+								<h3 class="widget-title">Our Studio</h3>
+								<div class="project-item">
+									<img src="images/7.jpg" alt="">
+									<div class="project-hover">
+										<h4>Great Nature Capture</h4>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="col-md-7 col-sm-7">
+							<div class="box-content">
+								<h3 class="widget-title">Our Technical Skills</h3>
+								<ul class="progess-bars">
+									<li>
+										<span>HTML CSS 80%</span>
+										<div class="progress">
+											<div class="progress-bar" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100" style="width: 80%;"></div>
+										</div>
+									</li>
+									<li>
+										<span>PHOTOSHOP 95%</span>
+										<div class="progress">
+											<div class="progress-bar" role="progressbar" aria-valuenow="95" aria-valuemin="0" aria-valuemax="100" style="width: 95%;"></div>
+										</div>
+									</li>
+									<li>
+										<span>WORDPRESS 70%</span>
+										<div class="progress">
+											<div class="progress-bar" role="progressbar" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100" style="width: 70%;"></div>
+										</div>
+									</li>
+									<li>
+										<span>PHP mySQL 50%</span>
+										<div class="progress">
+											<div class="progress-bar" role="progressbar" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100" style="width: 50%;"></div>
+										</div>
+									</li>
+								</ul>
+							</div>
+						</div>
+					</div>
+				</div>
 
-        var tree = new Tree(canvas[0], width, height, opts);
-        var seed = tree.seed;
-        var foot = tree.footer;
-        var hold = 1;
+				<div id="menu-3" class="content gallery-section">
+					<div class="box-content">
+						<h3 class="widget-title">Past Projects</h3>
+						<div class="row">
+							<div class="col-md-4 col-sm-6 col-xs-12">
+								<div class="project-item">
+									<img src="images/1.jpg" alt="">
+									<div class="project-hover">
+										<h4>Great Nature Capture</h4>
+									</div>
+								</div>
+							</div>
+							<div class="col-md-4 col-sm-6 col-xs-12">
+								<div class="project-item">
+									<img src="images/2.jpg" alt="">
+									<div class="project-hover">
+										<h4>Another Image Caption</h4>
+									</div>
+								</div>
+							</div>
+							<div class="col-md-4 col-sm-6 col-xs-12">
+								<div class="project-item">
+									<img src="images/3.jpg" alt="">
+									<div class="project-hover">
+										<h4>Great Nature Capture</h4>
+									</div>
+								</div>
+							</div>
+							<div class="col-md-4 col-sm-6 col-xs-12">
+								<div class="project-item">
+									<img src="images/4.jpg" alt="">
+									<div class="project-hover">
+										<h4>Another Image Caption</h4>
+									</div>
+								</div>
+							</div>
+							<div class="col-md-4 col-sm-6 col-xs-12">
+								<div class="project-item">
+									<img src="images/5.jpg" alt="">
+									<div class="project-hover">
+										<h4>Great Nature Capture</h4>
+									</div>
+								</div>
+							</div>
+							<div class="col-md-4 col-sm-6 col-xs-12">
+								<div class="project-item">
+									<img src="images/6.jpg" alt="">
+									<div class="project-hover">
+										<h4>Another Image Caption</h4>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="project-pages">
+							<ul>
+								<li><a href="#">1</a></li>
+								<li><a href="#">2</a></li>
+								<li><a href="#">3</a></li>
+								<li><a href="#">...</a></li>
+							</ul>
+						</div>
+					</div>
+				</div>
 
-        canvas.click(function(e) {
-            var offset = canvas.offset(), x, y;
-            x = e.pageX - offset.left;
-            y = e.pageY - offset.top;
-            if (seed.hover(x, y)) {
-                hold = 0; 
-                canvas.unbind("click");
-                canvas.unbind("mousemove");
-                canvas.removeClass('hand');
-            }
-        }).mousemove(function(e){
-            var offset = canvas.offset(), x, y;
-            x = e.pageX - offset.left;
-            y = e.pageY - offset.top;
-            canvas.toggleClass('hand', seed.hover(x, y));
-        });
+				<div id="menu-4" class="content contact-section">
+					<div class="row">
+						<div class="col-md-8 col-sm-8">
+							<div class="box-content">
+								<h3 class="widget-title">Send Us A Message</h3>
+								<form class="contact-form">
+									<fieldset>
+										<input type="text" class="name" id="name" placeholder="Name...">
+									</fieldset> 
+									<fieldset>
+										<input type="email" class="email" id="email" placeholder="Email...">
+									</fieldset> 
+									<fieldset>
+										<input type="text" class="subject" id="subject" placeholder="Subject...">
+									</fieldset>
+									<fieldset>
+										<textarea name="message" id="message" cols="30" rows="4" placeholder="Message.."></textarea>
+									</fieldset>
+									<fieldset>
+										<input type="submit" class="button" id="button" value="Send Message">
+									</fieldset>
+								</form>
+							</div>
+						</div>
+						<div class="col-md-4 col-sm-4">
+							<div class="box-content">
+								<h3 class="widget-title">Stay In Touch</h3>
+								<p>Sed ullamcorper, risus a tincidunt efficitur, massa mauris ultricies leo, eu interdum eros erat non augue. <br><br>
+								Suspendisse ornare sollicitudin lectus non egestas. Nam fermentum imperdiet ligula congue venenatis. </p>
+								<div class="about-social">
+									<ul>
+										<li><a href="#" class="fa fa-facebook"></a></li>
+										<li><a href="#" class="fa fa-twitter"></a></li>
+										<li><a href="#" class="fa fa-linkedin"></a></li>
+										<li><a href="#" class="fa fa-dribbble"></a></li>
+									</ul>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
 
-        var seedAnimate = eval(Jscex.compile("async", function () {
-            seed.draw();
-            while (hold) {
-                $await(Jscex.Async.sleep(10));
-            }
-            while (seed.canScale()) {
-                seed.scale(0.95);
-                $await(Jscex.Async.sleep(10));
-            }
-            while (seed.canMove()) {
-                seed.move(0, 2);
-                foot.draw();
-                $await(Jscex.Async.sleep(10));
-            }
-        }));
+			</div>
+		</div>
 
-        var growAnimate = eval(Jscex.compile("async", function () {
-            do {
-    	        tree.grow();
-                $await(Jscex.Async.sleep(10));
-            } while (tree.canGrow());
-        }));
 
-        var flowAnimate = eval(Jscex.compile("async", function () {
-            do {
-    	        tree.flower(2);
-                $await(Jscex.Async.sleep(10));
-            } while (tree.canFlower());
-        }));
+		<div class="col-md-3 hidden-sm">
+			
+			<nav id="nav" class="main-navigation hidden-xs hidden-sm">
+				<ul class="main-menu">
+					<li>
+						<a class="show-1 active homebutton" href="#"><i class="fa fa-home"></i>Home</a>
+					</li>
+					<li>
+						<a class="show-2 aboutbutton" href="#"><i class="fa fa-user"></i>About Us</a>
+					</li>
+					<li>
+						<a class="show-3 projectbutton" href="#"><i class="fa fa-camera"></i>Gallery</a>
+					</li>
+					<li>
+						<a class="show-5 contactbutton" href="#"><i class="fa fa-envelope"></i>Contact</a>
+					</li>
+				</ul>
+			</nav>
 
-        var moveAnimate = eval(Jscex.compile("async", function () {
-            tree.snapshot("p1", 240, 0, 610, 680);
-            while (tree.move("p1", 500, 0)) {
-                foot.draw();
-                $await(Jscex.Async.sleep(10));
-            }
-            foot.draw();
-            tree.snapshot("p2", 500, 0, 610, 680);
+		</div>
+	</div>
+</div>
 
-            // 会有闪烁不得意这样做, (＞﹏＜)
-            canvas.parent().css("background", "url(" + tree.toDataURL('image/png') + ")");
-            canvas.css("background", "#ffe");
-            $await(Jscex.Async.sleep(300));
-            canvas.css("background", "none");
-        }));
+<!-- SITE-FOOTER -->
+<div class="site-footer">
+	<div class="container">
+		<div class="row">
+			<div class="col-md-12 text-center">
+				<p>Copyright &copy; 2084 Company Name | More Templates - Collect from <a href="http://www.mycodes.net">网站模板</a></p>
+			</div>
+		</div>
+	</div>
+</div> <!-- .site-footer -->
 
-        var jumpAnimate = eval(Jscex.compile("async", function () {
-            var ctx = tree.ctx;
-            while (true) {
-                tree.ctx.clearRect(0, 0, width, height);
-                tree.jump();
-                foot.draw();
-                $await(Jscex.Async.sleep(25));
-            }
-        }));
-
-        var textAnimate = eval(Jscex.compile("async", function () {
-		    var together = new Date();
-		    together.setFullYear(2018,1 , 9); 			//时间年月日
-		    together.setHours(16);						//小时	
-		    together.setMinutes(53);					//分钟
-		    together.setSeconds(0);					//秒前一位
-		    together.setMilliseconds(2);				//秒第二位
-
-		    $("#code").show().typewriter();
-            $("#clock-box").fadeIn(500);
-            while (true) {
-                timeElapse(together);
-                $await(Jscex.Async.sleep(1000));
-            }
-        }));
-
-        var runAsync = eval(Jscex.compile("async", function () {
-            $await(seedAnimate());
-            $await(growAnimate());
-            $await(flowAnimate());
-            $await(moveAnimate());
-
-            textAnimate().start();
-
-            $await(jumpAnimate());
-        }));
-
-        runAsync().start();
-    })();
-    </script>
-
+<script src="js/vendor/jquery-1.10.2.min.js"></script>
+<script src="js/plugins.js"></script>
+<script src="js/main.js"></script>
+<!-- templatemo 439 rectangle -->
 </body>
 </html>
-
